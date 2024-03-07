@@ -1,0 +1,10 @@
+<launch>
+
+    <arg name="a" default="5"/>
+    <arg name="b" default="3"/>
+
+    <param name="a" value="$(eval 2*arg('a'))" />
+    <param name="b" value="$(arg b)" />
+
+    <node pkg="tutorial" type="addtwoclient.py" name="add_two_client" output="screen" />
+</launch>

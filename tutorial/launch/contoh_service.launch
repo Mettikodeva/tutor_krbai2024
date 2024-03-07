@@ -1,0 +1,11 @@
+<launch>
+    <arg name="a" default="10"/>
+    <arg name="b" default="10"/>
+    <include file="$(find tutorial)/launch/launch_server.launch" />
+
+    <include file="$(find tutorial)/launch/launch_client.launch">
+        <arg name="a" value="$(arg a)"/>
+        <arg name="b" value="$(arg b)"/>
+    </include>
+    
+</launch>

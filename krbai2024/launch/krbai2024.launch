@@ -1,0 +1,6 @@
+<launch>
+    <include filename="$(find krbai2024)/launch/mavros_only.launch"/>
+    
+    <node pkg="krbai2024" type="main.py" name="main_krbai" output="screen"/>
+
+</launch>

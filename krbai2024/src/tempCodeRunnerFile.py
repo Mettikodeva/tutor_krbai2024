@@ -1,0 +1,1 @@
+ "Mouse position: (%s %s)" % (event.x, event.y)
